@@ -13,9 +13,6 @@ public class EnumTest {
     @Autowired
     ExamService examService;
 
-    @Autowired
-    TestService testService;
-
     @Test
     void test() {
         for (int i = 0; i < 5; i++) {
@@ -24,11 +21,4 @@ public class EnumTest {
         }
     }
 
-    @Test
-    void test1() {
-        for (int i = 0; i < 5; i++) {
-            log.info("client request i ={}", i);
-            testService.request("data" + i);
-        }
-    }
 }
