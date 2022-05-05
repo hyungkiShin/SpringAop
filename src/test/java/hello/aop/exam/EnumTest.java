@@ -7,7 +7,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
 
 @Slf4j
-@Import(TraceAspect1.class)
 @SpringBootTest
 public class EnumTest {
 
